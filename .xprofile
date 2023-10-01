@@ -1,0 +1,8 @@
+#!/bin/sh
+setxkbmap de &
+picom -fb --experimental-backends --backend glx &
+nitrogen --restore &
+lxsession &
+xsetroot -cursor_name left_ptr
+sxhkd &
+exec bspwm
